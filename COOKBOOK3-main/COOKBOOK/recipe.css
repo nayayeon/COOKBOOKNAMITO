@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+.hero-section {
+  height: 100vh;
+  background: url("hero-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+/* Nav */
+nav {
+  border: 3px solid #ffffff1d;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  height: 70px;
+  color: rgb(255, 255, 255);
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.nav-items,
+.overview,
+.account {
+  display: flex;
+}
+.overview {
+  margin-right: 4rem;
+}
+.logo h2 {
+  text-decoration: overline;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+nav li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+}
+nav a:hover {
+  color: #ffffff;
+}
+nav a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #0aa05a;
+  width: 0%;
+  transition: all ease-in-out 300ms;
+}
+nav a:hover::after {
+  width: 100%;
+}
+.hero-header78 {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.hero-column {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.hero-content1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+  
+ 
+  
+  
+  .button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 100px;
+  }
+  
+  .button-86::after,
+  .button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+  }
+  
+  .button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  .button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+/* styles.css */
+
+/* General reset */
+body, h1, h2, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+header {
+  background: #000000;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 1300px;
+  margin: 1rem auto;
+  padding: 1rem;
+  backdrop-filter: blur(100px);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.recipes {
+    margin-bottom: -1rem;
+  }
+.recipe2 {
+    margin-top: -20px;
+    margin-bottom: -15rem;
+  }
+  .recipe3 {
+    margin-bottom: -15rem;
+  }
+  .recipe4 {
+    margin-bottom: -15rem;
+  }
+  .recipe5 {
+    margin-bottom: -10rem;
+  }
+  .recipe6 {
+    margin-bottom: -13rem;
+  }
+  .recipe7 {
+    margin-bottom: -20rem;
+  }
+  .recipe8 {
+    margin-bottom: -20rem;
+  }
+
+ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 2rem;
+}
+body {
+  background-image: url('background1.png'); 
+}
+h2{
+    font-size: 30px;
+}
+.recipe, .recipe2, .recipe3, .recipe4, .recipe5, .recipe6, .recipe7, .recipe8, .recipe9, .recipe10, .recipe12, .recipe11{
+    display: flex;
+    flex-wrap: wrap; /* Allows the content to wrap */
+    margin: 20px;
+}
+
+.recipe-image{
+    width: 40%;
+    height: 50%;
+    margin-right: 20px; /* Space between image and ingredients */
+}
+
+.recipe-content {
+    width: 55%; /* Space for the ingredients */
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.instructions {
+    width: 100%; /* Take full width for the instructions */
+    margin-top: 20px; /* Add space between ingredients and instructions */
+}
